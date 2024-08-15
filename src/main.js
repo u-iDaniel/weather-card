@@ -1,7 +1,6 @@
+// Import classes
 import VisualCrossingAPI from "./VisualCrossingAPI";
 import DOMEditor from "./DOMEditor";
-
-// Import classes
 
 // Entry point class
 class UnitTracker {
