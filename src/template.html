@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Card</title>
+</head>
+<body>
+    <div class="card">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search">
+            <button id="search-btn">
+                <img class="search-svg" src="./images/icons8-search.svg" alt="Search">
+            </button>
+        </div>
+        <p id="error-message" class="error-message"></p>
+
+        <div class="info">
+            <img id="icon" src="./images/weather-icons/clear-day.svg" alt="Clear Day">
+            <h1 id="temp"></h1>
+            <h1 id="location"></h1>
+        </div>
+
+        <div class="additional-info">
+            <div class="humidity">
+                <img class="add-info-svg humidity-svg" src="./images/weather-icons/humidity.svg" alt="Humidity">
+                <div class="add-info">
+                    <p id="humid-pct"></p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <img class="add-info-svg wind-svg" src="./images/weather-icons/wind.svg" alt="Wind">
+                <div class="add-info">
+                    <p id="wind-spd"></p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="units">
+        <button class="active" id="celsius-btn" data-unit="metric">
+            <img class="celsius-svg" src="./images/celsius.svg" alt="Celsius" title="Celsius" data-unit="metric">
+        </button>
+        <button id="fahrenheit-btn" data-unit="imperial">
+            <img class="fahrenheit-svg" src="./images/fahrenheit.svg" alt="Fahrenheit" title="Fahrenheit" data-unit="imperial">
+        </button>
+    </div>
+    
+    <footer>
+        <p>Built by Daniel 💖</p>
+    </footer>
+</body>
+</html>
